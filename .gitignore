@@ -1,0 +1,47 @@
+# Laravel core
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
+.env.*.php
+
+# IDEs and editors
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Laravel specific
+/bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+/storage/app/*
+/storage/framework/*
+/storage/logs/*
+!storage/app/public
+!storage/framework/cache
+!storage/framework/cache/data
+!storage/framework/sessions
+!storage/framework/testing
+!storage/framework/views
+!storage/logs
+
+# Composer PHAR
+composer.phar
+
+# PHPUnit
+.phpunit.result.cache
+
+# Laravel Telescope
+storage/telescope
+
+# Ignoring compiled Vite assets
+/public/build
+/public/hot
+vite.config.js

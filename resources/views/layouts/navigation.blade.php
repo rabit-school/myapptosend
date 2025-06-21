@@ -15,6 +15,15 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('posts.index')" :active="request()->routeIs('posts.index')">
+                        {{ __('Game history') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('stat.index')" :active="request()->routeIs('stat.index')">
+                        {{ __('Statistic') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('admin.partners.index')" :active="request()->routeIs('admin.partners.index')">
+                        {{ __('Partners') }}
+                    </x-nav-link>
                 </div>
             </div>
 

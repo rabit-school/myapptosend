@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Back-office'),
 
     /*
     |--------------------------------------------------------------------------
@@ -122,5 +122,41 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+
+    // 'providers' => [
+    //     Illuminate\Auth\AuthServiceProvider::class,
+    //     Illuminate\Broadcasting\BroadcastServiceProvider::class,
+    //     Illuminate\Bus\BusServiceProvider::class,
+    //     Illuminate\Cache\CacheServiceProvider::class,
+    //     Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
+    //     Illuminate\Hashing\HashServiceProvider::class,
+    //     Illuminate\Mail\MailServiceProvider::class,
+    //     Illuminate\Pagination\PaginationServiceProvider::class,
+    //     Illuminate\Pipeline\PipelineServiceProvider::class,
+    //     Illuminate\Queue\QueueServiceProvider::class,
+    //     Illuminate\Redis\RedisServiceProvider::class,
+    //     Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
+    //     Illuminate\Session\SessionServiceProvider::class,
+    //     Illuminate\Translation\TranslationServiceProvider::class,
+    //     Illuminate\Validation\ValidationServiceProvider::class,
+    //     Illuminate\View\ViewServiceProvider::class,
+    //     Illuminate\Filesystem\FilesystemServiceProvider::class,
+    //     Illuminate\Database\DatabaseServiceProvider::class,
+    //     Illuminate\Events\EventServiceProvider::class,
+    //     Illuminate\Notifications\NotificationServiceProvider::class,
+    //     Illuminate\Routing\RoutingServiceProvider::class,
+    //     Illuminate\Foundation\Providers\FoundationServiceProvider::class,
+    //     /*
+    //     * Laravel Framework Service Providers...
+    //     */
+    //     /*
+    //     * Application Service Providers...
+    //     */
+    //     App\Providers\AppServiceProvider::class,
+    //     App\Providers\AuthServiceProvider::class,
+    //     // App\Providers\EventServiceProvider::class,
+    //     // App\Providers\RouteServiceProvider::class,
+
+    // ],
 
 ];

@@ -12,7 +12,7 @@ class PartnerController extends Controller
     public function index()
     {
         // dd(auth()->user());
-        $partners = Partner::latest()->get();
+        $partners = Partner::latest()->paginate(10);
         return view('admin.partners.index', compact('partners'));
     }
 
@@ -34,5 +34,31 @@ class PartnerController extends Controller
 
         return redirect()->route('admin.partners.index')
             ->with('status', 'Partner registered successfully!');
+    }
+
+    public function edit(Partner $partner)
+    {
+        return view('admin.partners.edit', compact('partner'));
+    }
+
+    public function update(Request $request, Partner $partner)
+    {
+        $request->validate([
+            'name' => 'required',
+            'license_key' => 'required|unique:partners,license_key,' . $partner->id,
+            'allowed_areas' => 'required',
+            'currency_sign' => 'required|max:10',
+        ]);
+
+        $partner->update($request->all());
+
+        return redirect()->route('admin.partners.index')->with('success', 'Partner updated.');
+    }
+
+    public function destroy(Partner $partner)
+    {
+        $partner->delete();
+
+        return redirect()->route('admin.partners.index')->with('success', 'Partner deleted.');
     }
 }

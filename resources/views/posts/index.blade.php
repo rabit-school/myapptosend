@@ -26,9 +26,9 @@
             <select name="game" class="select select-bordered">
                 <option value="">All Games</option>
                 <option>The last queen of nile</option>
-                <option>Coco time</option>
                 <option>Halloween ritual</option>
                 <option>Chimera Lounge</option>
+                <option>Coco time</option>
                 <option>Lucky little puppies</option>
             </select>
 
